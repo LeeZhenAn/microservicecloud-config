@@ -3,16 +3,16 @@ spring:
     active:
       - dev
 ---
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-dev.com:7001/eureka/
 server:
   port: 8201
 spring:
   profiles: dev
   application:
     name: microservicecloud-config-cilent
-eureka:
-  client:
-    service-url:
-      defaultZone: http://eureka-dev.com:7001/eureka/
 ---
 server:
   port: 8202
